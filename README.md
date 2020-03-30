@@ -15,7 +15,7 @@ The objects in this package were initially created while volunteering
 with the Missouri Historical Society.
 
 Screenshot from <https://mohistory.org/society> :
-<img src="C:/Users/BSHALLOW/Documents/R/adhoc_personal/packages/mhscales/inst/extdata/mhs-colors.PNG" width="75%" />
+<img src="inst/extdata/mhs-colors.PNG" width="75%" />
 
 Load packages, set theme:
 

@@ -20,7 +20,7 @@ The objects in this package were initially created while volunteering with the M
 
 Screenshot from https://mohistory.org/society :
 ```{r, echo = FALSE, out.width="75%"}
-knitr::include_graphics(here::here("inst", "extdata", "mhs-colors.PNG"))
+knitr::include_graphics("inst/extdata/mhs-colors.PNG")
 ```
 
 Load packages, set theme:
