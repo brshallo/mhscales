@@ -23,18 +23,7 @@ Load packages, set theme:
 library(ggplot2)
 library(mhscales)
 library(dplyr)
-#> Warning: package 'dplyr' was built under R version 3.5.3
-#> 
-#> Attaching package: 'dplyr'
-#> The following objects are masked from 'package:stats':
-#> 
-#>     filter, lag
-#> The following objects are masked from 'package:base':
-#> 
-#>     intersect, setdiff, setequal, union
 library(extrafont)
-#> Warning: package 'extrafont' was built under R version 3.5.2
-#> Registering fonts with R
 # extrafont::font_import()
 # loadfonts(device = "win")
 

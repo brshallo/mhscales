@@ -24,7 +24,7 @@ knitr::include_graphics("inst/extdata/mhs-colors.PNG")
 ```
 
 Load packages, set theme:
-```{r}
+```{r, warning=FALSE, message=FALSE}
 library(ggplot2)
 library(mhscales)
 library(dplyr)
