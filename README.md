@@ -34,7 +34,7 @@ theme_set(theme_minimal()+
 
 ## Installation
 
-You can install these functions from github:
+Install from github:
 
 ``` r
 if (!requireNamespace("devtools")) install.packages("devtools")
