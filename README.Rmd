@@ -23,6 +23,7 @@ The objects in this package were initially created while volunteering with the M
 You can install these functions from github:
 
 ``` r
+if (!requireNamespace("devtools")) install.packages("devtools")
 devtools::install_github("brshallo/mhscales")
 ```
 
@@ -69,5 +70,12 @@ iris %>%
   ggplot(aes(x = Species, fill = Species)) +
   geom_bar()+
   scale_fill_mhs(palette = "mhs_mhm", discrete = TRUE)
+```
+
+```{r}
+ggplot(iris, aes(x = Sepal.Length, fill = ..count..)) +
+  geom_histogram()+
+  scale_fill_mhs(palette = "smm", discrete = FALSE)+
+  ylim(c(0, 15))
 ```
 

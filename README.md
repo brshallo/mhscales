@@ -19,6 +19,7 @@ with the Missouri Historical Society.
 You can install these functions from github:
 
 ``` r
+if (!requireNamespace("devtools")) install.packages("devtools")
 devtools::install_github("brshallo/mhscales")
 ```
 
@@ -102,3 +103,13 @@ iris %>%
 ```
 
 <img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
+
+``` r
+ggplot(iris, aes(x = Sepal.Length, fill = ..count..)) +
+  geom_histogram()+
+  scale_fill_mhs(palette = "smm", discrete = FALSE)+
+  ylim(c(0, 15))
+#> `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+```
+
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
