@@ -17,6 +17,32 @@ with the Missouri Historical Society.
 Screenshot from <https://mohistory.org/society> :
 <img src="C:/Users/BSHALLOW/Documents/R/adhoc_personal/packages/mhscales/inst/extdata/mhs-colors.PNG" width="75%" />
 
+Load packages, set theme:
+
+``` r
+library(ggplot2)
+library(mhscales)
+library(dplyr)
+#> Warning: package 'dplyr' was built under R version 3.5.3
+#> 
+#> Attaching package: 'dplyr'
+#> The following objects are masked from 'package:stats':
+#> 
+#>     filter, lag
+#> The following objects are masked from 'package:base':
+#> 
+#>     intersect, setdiff, setequal, union
+library(extrafont)
+#> Warning: package 'extrafont' was built under R version 3.5.2
+#> Registering fonts with R
+# extrafont::font_import()
+# loadfonts(device = "win")
+
+theme_set(theme_minimal()+
+  theme(text = element_text(size = 16, family = "Cambria"))
+)
+```
+
 ## Installation
 
 You can install these functions from github:
@@ -73,15 +99,12 @@ mhscales::mhs_palettes
 You can set as continuous scales:
 
 ``` r
-library(ggplot2)
-library(mhscales)
-
 ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Sepal.Length)) +
  geom_point(size = 2) +
  scale_color_mhs(palette = "smm", discrete = FALSE)
 ```
 
-<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
 
 As discrete scales:
 
@@ -91,21 +114,21 @@ ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
  scale_color_mhs(palette = "mhs_mhm", discrete = TRUE)
 ```
 
-<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
 
 Equivalent functions exist for the fill aesthetic:
 
 ``` r
-library(dplyr)
-
 iris %>% 
   filter(Sepal.Length < 6) %>% 
   ggplot(aes(x = Species, fill = Species)) +
   geom_bar()+
-  scale_fill_mhs(palette = "mhs_mhm", discrete = TRUE)
+  scale_fill_mhs(palette = "mhs_mhm", discrete = TRUE)+ 
+  theme(panel.grid.major.x = element_blank(),
+        panel.grid.minor.y = element_blank())
 ```
 
-<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
 
 ``` r
 ggplot(iris, aes(x = Sepal.Length, fill = ..count..)) +
@@ -115,4 +138,4 @@ ggplot(iris, aes(x = Sepal.Length, fill = ..count..)) +
 #> `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
