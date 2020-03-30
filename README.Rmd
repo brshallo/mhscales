@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 ```
 # mhscales
 
-Provides color palletes that align with the colors for the Missouri Historical Society. The palletes were created for use with `ggplot2` charts but some objects may also be useful for setting file template colors, etc. The primary functions are `scale_color_mhs()` and `scale_fill_mhs()`. I used this [tutorial](    https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2) as guidance in creating these functions.
+Provides color palettes that align with the colors for the Missouri Historical Society. The palettes were created for use with `ggplot2` charts but some objects may also be useful for setting file template colors, etc. The primary functions are `scale_color_mhs()` and `scale_fill_mhs()`. I used this [tutorial](    https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2) as guidance in creating these functions.
 
 The objects in this package were initially created while volunteering with the Missouri Historical Society.
 
@@ -48,7 +48,7 @@ devtools::install_github("brshallo/mhscales")
 
 ## Data
 
-There are palletes defined for each of:
+There are palettes defined for each of:
 
 * Missouri Historical Society (mhs)
 * Missouri History Museum (mhm)

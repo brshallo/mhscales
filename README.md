@@ -3,8 +3,8 @@
 
 # mhscales
 
-Provides color palletes that align with the colors for the Missouri
-Historical Society. The palletes were created for use with `ggplot2`
+Provides color palettes that align with the colors for the Missouri
+Historical Society. The palettes were created for use with `ggplot2`
 charts but some objects may also be useful for setting file template
 colors, etc. The primary functions are `scale_color_mhs()` and
 `scale_fill_mhs()`. I used this
@@ -43,7 +43,7 @@ devtools::install_github("brshallo/mhscales")
 
 ## Data
 
-There are palletes defined for each of:
+There are palettes defined for each of:
 
   - Missouri Historical Society (mhs)
   - Missouri History Museum (mhm)
