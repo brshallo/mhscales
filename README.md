@@ -14,6 +14,9 @@ as guidance in creating these functions.
 The objects in this package were initially created while volunteering
 with the Missouri Historical Society.
 
+Screenshot from <https://mohistory.org/society> :
+<img src="C:/Users/BSHALLOW/Documents/R/adhoc_personal/packages/mhscales/inst/extdata/mhs-colors.PNG" width="75%" />
+
 ## Installation
 
 You can install these functions from github:
@@ -78,7 +81,7 @@ ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Sepal.Length)) +
  scale_color_mhs(palette = "smm", discrete = FALSE)
 ```
 
-<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
 
 As discrete scales:
 
@@ -88,7 +91,7 @@ ggplot(iris, aes(Sepal.Width, Sepal.Length, color = Species)) +
  scale_color_mhs(palette = "mhs_mhm", discrete = TRUE)
 ```
 
-<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
 
 Equivalent functions exist for the fill aesthetic:
 
@@ -102,7 +105,7 @@ iris %>%
   scale_fill_mhs(palette = "mhs_mhm", discrete = TRUE)
 ```
 
-<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
 
 ``` r
 ggplot(iris, aes(x = Sepal.Length, fill = ..count..)) +
@@ -112,4 +115,4 @@ ggplot(iris, aes(x = Sepal.Length, fill = ..count..)) +
 #> `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />

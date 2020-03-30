@@ -18,6 +18,11 @@ Provides color palletes that align with the colors for the Missouri Historical S
 
 The objects in this package were initially created while volunteering with the Missouri Historical Society.
 
+Screenshot from https://mohistory.org/society :
+```{r, echo = FALSE, out.width="75%"}
+knitr::include_graphics(here::here("inst", "extdata", "mhs-colors.PNG"))
+```
+
 ## Installation
 
 You can install these functions from github:
