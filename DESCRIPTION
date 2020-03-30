@@ -1,0 +1,17 @@
+Package: mhscales
+Type: Package
+Title: Ggplot Scales for Missouri Historical Society
+Version: 0.0.0.9000
+Author: Bryan Shalloway
+Maintainer: Bryan Shalloway <yourself@somewhere.net>
+Description: Allows discrete or continuous color scales
+    that align with the different organizations in MHS.
+    Follows tutorial here: 
+    https://drsimonj.svbtle.com/creating-corporate-colour-palettes-for-ggplot2
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports:
+    dplyr, 
+    ggplot2 
+RoxygenNote: 6.1.1
